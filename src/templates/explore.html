@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Explore Amazing Destinations</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.1/i18next.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Language Dropdown -->
+    <select onchange="changeLanguage(this.value)">
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="mr">Marathi</option>
+        <option value="te">Telugu</option>
+    </select>
+
+    <svg id="custom-cursor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#ffffff"
+            d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z">
+            <animate attributeName="fill" values="#ffffff;#f0f0f0;#ffffff" dur="2s" repeatCount="indefinite" />
+        </path>
+    </svg>
+
+    <div id="globe-container"></div>
+
+    <div class="content">
+        <section class="hero">
+            <h1 id="explore-world">Explore the World</h1>
+            <p id="discover">Discover breathtaking destinations and unforgettable experiences across the globe</p>
+            <a href="#destinations" class="explore-btn" id="explore-btn">Start Exploring</a>
+        </section>
+
+        <section id="destinations" class="destinations">
+            <div class="grid">
+                <div class="destination-card">
+                    <div class="card-image" style="background-image: url('/api/placeholder/400/320')"></div>
+                    <div class="card-content">
+                        <h3 id="santorini">Santorini, Greece</h3>
+                        <p id="santorini-desc">Experience the stunning white architecture and breathtaking sunsets of
+                            this Mediterranean paradise.</p>
+                        <a href="#" class="explore-btn" id="learn-more">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image" style="background-image: url('/api/placeholder/400/320')"></div>
+                    <div class="card-content">
+                        <h3 id="kyoto">Kyoto, Japan</h3>
+                        <p id="kyoto-desc">Immerse yourself in ancient temples, traditional gardens, and authentic
+                            Japanese culture.</p>
+                        <a href="#" class="explore-btn" id="learn-more2">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image" style="background-image: url('/api/placeholder/400/320')"></div>
+                    <div class="card-content">
+                        <h3 id="machu-picchu">Machu Picchu, Peru</h3>
+                        <p id="machu-picchu-desc">Explore the ancient Incan citadel set high in the Andes Mountains.</p>
+                        <a href="#" class="explore-btn" id="learn-more3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
